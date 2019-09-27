@@ -53,3 +53,5 @@ Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit'
 
 Route::get('permission-denied', 'PagesController@permissionDenied')->name('permission-denied');
 
+
+Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
